@@ -1,0 +1,38 @@
+{
+  "name": "mdip-did-eth-ledger",
+  "version": "0.0.1",
+  "description": "Smart contracts that implement MDIP DID smartcontract",
+  "author": "Naveed",
+  "keywords": [
+    "MDIP",
+    "DID",
+    "ETH"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelfKeyFoundation/selfkey-did-ledger.git"
+  },
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test",
+    "test:cov": "solidity-coverage",
+    "lint:sol": "solhint contracts/**/*.sol",
+    "compile": "./node_modules/.bin/truffle compile",
+    "_deploy": "./node_modules/.bin/truffle deploy --network ",
+    "deploy-local": "npm run _deploy local",
+    "deploy-rinkeby": "npm run _deploy rinkeby",
+    "deploy-mainnet": "npm run _deploy mainnet"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "solhint": "^1.5.1",
+    "solidity-coverage": "^0.6.0-beta.3",
+    "truffle-hdwallet-provider": "1.0.6",
+    "web3": "1.0.0-beta.37",
+    "truffle": "5.1.14"
+  },
+  "dependencies": {
+    "ethereumjs-util": "^6.1.0",
+    "openzeppelin-solidity": "^2.2.0"
+  }
+}
